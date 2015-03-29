@@ -1,0 +1,104 @@
+html {
+ font-family: 'Khula', sans-serif;
+}
+
+/* header styles */
+
+header {
+ width: 80%;
+ margin: 20px auto;
+ text-align: center;
+ border-bottom: 1px dashed #B20096;
+}
+
+ nav, #headline, #header-image {
+  display: inline-block
+}
+
+nav, #headline {
+  width: 30%;
+  font-weight: bold;
+}
+
+
+nav, ul, a  {
+  font-size: 110%;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: left;
+}
+
+img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  border: 1px solid #B20096;
+}
+
+#header-image {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 30px;
+}
+
+/* main styles */
+
+main {
+width: 40%;
+margin: 50px auto;
+}
+
+.blog-preview {
+  border: 1px solid #B20096;
+  padding: 20px;
+  margin-bottom: 30px;
+  box-shadow: 10px 10px 5px #888888;
+}
+
+.blog-preview h3 {
+font-weight: bold;
+background-color: #B20096;
+color: #fff;
+padding-left: 20px;
+}
+
+/* social media aside styles */
+
+aside {
+  position: fixed;
+  top: 50%;
+  left: 10%;
+}
+
+ul#social li a {
+width: 70px;
+height: 70px;
+display: block;
+text-indent: -9999em;
+background: url('../imgs/social.png');
+opacity: 0.5;
+}
+
+
+#social #tw {
+  background-position: 0 0;
+}
+
+#social #gh {
+  background-position: -237px 0;
+}
+
+#social #ldin {
+ background-position: -316px -79px;
+}
+
+#social #gp {
+  background-position: -157px -79px;
+}
+
+/* footer styles */
+
+footer {
+  font-size: 75%;
+}
