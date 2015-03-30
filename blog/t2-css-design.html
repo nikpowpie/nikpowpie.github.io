@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nikki's Blog: CSS Positioning</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Arvo|Khula' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <header>
+  <div id="header-box">
+  <div id="headline">
+  <h1>Hi, I'm Nikki.</h1>
+  <h2>An asipiring web developer and Dev BootCamp padawan.</h2>
+  </div>
+
+  <div id="header-image">
+    <img src="../imgs/Nikki-compressed.jpg" alt="Me!" />
+  </div>
+
+  <nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">My Work</a></li>
+      <li><a href="#">Connect</a></li>
+    </ul>
+  </nav>
+</div>
+</header>
+
+<main>
+  <h1>Position those elements!</h1>
+  <h2>a crash course on CSS positioning.</h2>
+  <h4>March 29, 2015</h4>
+
+  <section>
+
+    <p>
+       OH, CSS positiong. How you have caused me so many headaches this week. Figuring out which position property to use and when, can be a bit tricky. So I'm going to lay out all that I know - here. With the hopes that it will help you, and me, get a handle on this sometimes complicated property.
+    </p>
+
+    <p>
+      BUT, Before we get to positioning, we should talk about what CSS is, exactly. CSS stands for Cascading Style Sheets. Cascading Style Sheets contain special code that makes your website pretty. That's right, if HTML builds the structure of your page; then CSS designs it. The set up is simple. You start by selecting the element in the HTML that you want to manipulate. Then, when you decide what you want to do to that element, you choose the appropriate property. Finally, you plug in the value that suits your design needs. With CSS, you can change colors, fonts, sizes and even an element's position on the page (which is what we will be talking about today.) For our examples and explanations below we will be selecting the &lt;main&gt; element to position with CSS.
+    </p>
+
+    <p>
+      First let's discuss the static property value. Stactic positioning is the default position an element has on the page. It's the position the element has in the normal flow of the HTML document. You cannot use the top, right, bottom, left or z-index properties on this property value because, you don't need it. You will probably never see this property in a style sheet, because it basically tells elements to, "Stay in your natural flow!".
+    </p>
+
+    <p>
+      Next the relative property value, which can be a bit tricky. At least for me it was. Essentially, when you relatively position an element, you can manipulate it's location on the page - without actually changing the flow of that page. In other words, you can move the element, but the spot from which it originated, will still be there. The elements around this relatively positioned element act like it's still in it's normal spot. With this value, you can use properties like, top, right, bottom and left to determine the exact place on the page you want to stick your element.
+      <blockquote>
+          main {
+          position: relative;
+          top: 120px;
+          left: 300px;
+        }
+        </blockquote>
+    </p>
+
+    <p>
+      And then the plot thickens. Now we come to the absolute position. Which is similar to the relative position but different because when you absolutely position an element, it is moved from the flow of the page entirely. It's treated as if it where never even in the page all together. With this value, you can use the top, right, bottom and left properties to determine the exact location on the page, however, it's position will be relative to it's parent element. For example, if the &lt;main&gt; element is nested inside of a &lt;div&gt; element, then it will be positioned on the page according to the &lt;div&gt;'s location. In order for this to work, the parent element (or the &lt;div&gt; in our example) has to also have a position property with a value of relative, absolute or fixed (not static). Otherwise, it will position itself according to the overarching &lt;html&gt; element.
+      <blockquote>
+          main {
+          position: absolute;
+          bottom: 350px;
+          z-index: -250px;
+        }
+        </blockquote>
+    </p>
+
+    <p>
+      Last, but not least: the fixed position. Like the absolute position, the element is removed from the normal flow of the document. All the other elements around it act like it's not even there. The difference here is, the fixed value, fixes an element on the page according to the browser window. So even if the user scrolls down, the fixed element will still be there. This is good to use for social media icons, or menus that you want your user to always see.
+       <blockquote>
+          main {
+          position: fixed;
+          top: 400px;
+          right: 200px;
+        }
+        </blockquote>
+    </p>
+
+    <p>
+      There you have it! A quick crash course on CSS positioning. I hope this helps you as much as it has helped me. Have questions? Suggestions? Or just good ol' general feedback? Tweet me @nikkip_squared.
+    </p>
+  </section>
+
+ <section>
+ <h3>Resources</h3>
+  <ul>
+    <li><a href="http://www.w3schools.com/css/css_positioning.asp" target="_blank">http://www.w3schools.com/css/css_positioning.asp</a></li>
+    <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">https://developer.mozilla.org/en-US/docs/Web/CSS/position</a></li>
+  </ul>
+ </section>
+
+</main>
+
+<aside>
+<!--Social Media Icons-->
+  <ul id="social">
+    <li><a href="https://twitter.com/nikkip_squared" id="tw" target="_blank">twitter</a></li>
+    <li><a href="https://github.com/npowerpierre" id="gh" target="_blank">github</a></li>
+    <li><a href="www.linkedin.com/in/snpierre/en" id="ldin" target="_blank">linkedin</a></li>
+    <li><a href="https://plus.google.com/111503533536791947529/posts" id="gp" target="_blank">google plus</a></li>
+  </ul>
+</aside>
+
+<footer>
+  &copy; Nikki Pierre 2015
+</footer>
+
+</body>
+</html>
