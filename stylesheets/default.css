@@ -5,10 +5,10 @@ html {
 /* header styles */
 
 header {
- width: 80%;
+ width: 60%;
  margin: 20px auto;
  text-align: center;
- border-bottom: 1px dashed #B20096;
+ border-bottom: 2px dotted #B20096;
 }
 
  nav, #headline, #header-image {
@@ -47,6 +47,7 @@ img {
 main {
 width: 40%;
 margin: 50px auto;
+position: relative
 }
 
 .blog-preview {
@@ -57,18 +58,35 @@ margin: 50px auto;
 }
 
 .blog-preview h3 {
-font-weight: bold;
+font-weight: bolder;
 background-color: #B20096;
 color: #fff;
 padding-left: 20px;
+border-radius: 5px;
+}
+
+.blog-preview h4 {
+  font-weight: bolder;
+}
+
+/*.blog-preview a {
+  background-color: #20B218;
+  color: #fff;
+  border-radius: 5px;
+  padding: 3px;
+}*/
+
+block-quote {
+ font-family: 'Arvo', serif;
 }
 
 /* social media aside styles */
 
 aside {
   position: fixed;
-  top: 50%;
-  left: 10%;
+  bottom: 20%;
+  left: 5%;
+  height: 50%;
 }
 
 ul#social li a {
@@ -79,7 +97,6 @@ text-indent: -9999em;
 background: url('../imgs/social.png');
 opacity: 0.5;
 }
-
 
 #social #tw {
   background-position: 0 0;
@@ -101,4 +118,9 @@ opacity: 0.5;
 
 footer {
   font-size: 75%;
+  color: white;
+  background-color: #B20096;
+  height: 20px;
+  positon: absolute;
+  bottom: 0;
 }

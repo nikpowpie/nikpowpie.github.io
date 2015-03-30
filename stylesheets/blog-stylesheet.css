@@ -7,3 +7,7 @@ main {
 width: 40%;
 margin: 50px auto;
 }
+
+blockquote {
+font-family: 'Arvo', serif;
+}
