@@ -1,5 +1,12 @@
+/* for everything */
+
 html {
  font-family: 'Khula', sans-serif;
+}
+
+a:hover {
+ color: #00FF00;
+ font-weight: bolder;
 }
 
 /* header styles */
@@ -10,10 +17,6 @@ header {
  text-align: center;
  border-bottom: 2px dotted #B20096;
 }
-
-/* nav, #headline, #header-image {
-  display: inline-block
-} */
 
 nav, #headline {
   width: 100%;
@@ -29,7 +32,6 @@ nav, #headline {
 
 nav, li, a {
   font-size: 110%;
-  color: #800080;
   list-style-type: none;
   text-decoration: none;
   text-align: center;
@@ -38,10 +40,6 @@ nav, li, a {
 
 nav a {
   margin-right: 10%;
-}
-
-nav a:hover {
-  color: #00FF00;
 }
 
 img {
@@ -85,18 +83,8 @@ border-radius: 7px;
   font-weight: bolder;
 }
 
-.blog-preview a {
-  font-weight: bolder;
-  color: #800080;
-}
-
-.blog-preview a:hover {
-  font-weight: bolder;
-  color:#00FF00;
-}
-
 .blog-preview p {
-  color: #A3AAA3;
+  color: #424342;
 }
 
 block-quote {
