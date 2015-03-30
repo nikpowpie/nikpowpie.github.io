@@ -6,40 +6,55 @@ html {
 
 header {
  width: 60%;
- margin: 20px auto;
+ margin: 10px auto;
  text-align: center;
  border-bottom: 2px dotted #B20096;
 }
 
- nav, #headline, #header-image {
+/* nav, #headline, #header-image {
   display: inline-block
-}
+} */
 
 nav, #headline {
-  width: 30%;
+  width: 100%;
   font-weight: bold;
+  text-align: center;
+  margin: 0 auto;
 }
 
+#headline {
+  line-height: 1em;
+  margin-top: 2em;
+}
 
-nav, ul, a  {
+nav, li, a {
   font-size: 110%;
+  color: #800080;
   list-style-type: none;
   text-decoration: none;
-  text-align: left;
+  text-align: center;
+  display: inline;
+}
+
+nav a {
+  margin-right: 10%;
+}
+
+nav a:hover {
+  color: #00FF00;
 }
 
 img {
   height: 10em;
   width: 10em;
   border-radius: 50%;
-  border: 1px solid #B20096;
+  border: 2px solid #00FF00;
 }
 
 #header-image {
   text-align: center;
   margin-right: auto;
   margin-left: auto;
-  padding: 30px;
 }
 
 /* main styles */
@@ -52,6 +67,7 @@ position: relative
 
 .blog-preview {
   border: 1px solid #B20096;
+  border-radius: 7px;
   padding: 20px;
   margin-bottom: 30px;
   box-shadow: 10px 10px 5px #888888;
@@ -62,19 +78,26 @@ font-weight: bolder;
 background-color: #B20096;
 color: #fff;
 padding-left: 20px;
-border-radius: 5px;
+border-radius: 7px;
 }
 
 .blog-preview h4 {
   font-weight: bolder;
 }
 
-/*.blog-preview a {
-  background-color: #20B218;
-  color: #fff;
-  border-radius: 5px;
-  padding: 3px;
-}*/
+.blog-preview a {
+  font-weight: bolder;
+  color: #800080;
+}
+
+.blog-preview a:hover {
+  font-weight: bolder;
+  color:#00FF00;
+}
+
+.blog-preview p {
+  color: #A3AAA3;
+}
 
 block-quote {
  font-family: 'Arvo', serif;
@@ -123,4 +146,5 @@ footer {
   height: 20px;
   positon: absolute;
   bottom: 0;
+  font-weight: bolder;
 }
