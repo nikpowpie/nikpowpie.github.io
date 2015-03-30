@@ -4,7 +4,7 @@ html {
  font-family: 'Khula', sans-serif;
 }
 
-a:hover {
+  a:hover {
  color: #00FF00;
  font-weight: bolder;
 }
@@ -46,7 +46,7 @@ img {
   height: 10em;
   width: 10em;
   border-radius: 50%;
-  border: 2px solid #00FF00;
+  border: 1px solid #00FF00;
 }
 
 #header-image {
@@ -95,9 +95,9 @@ block-quote {
 
 aside {
   position: fixed;
-  bottom: 20%;
-  left: 5%;
-  height: 50%;
+  bottom: 10%;
+  left: 2%;
+  height: 40%;
 }
 
 ul#social li a {
