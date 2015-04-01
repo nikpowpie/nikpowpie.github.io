@@ -1,7 +1,7 @@
 /* for everything */
 
 html {
- font-family: 'Khula', sans-serif;
+ font-family: 'Lato', sans-serif;
 }
 
   a:hover {
@@ -95,8 +95,8 @@ block-quote {
 
 aside {
   position: fixed;
-  bottom: 10%;
-  left: 2%;
+  bottom: 15%;
+  left: 5%;
   height: 40%;
 }
 
