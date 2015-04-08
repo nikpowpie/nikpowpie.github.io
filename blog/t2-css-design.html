@@ -11,8 +11,9 @@
     <header>
   <div id="header-box">
   <div id="headline">
-  <h1>Hi, I'm Nikki. Welcome to my blog!</h1>
-  <h2>&lt;Aspiring web developer/&gt;&lt;Dev Bootcamp padawan/&gt;</h2>
+  <h1>Hi, I'm Nikki.</h1>
+  <h2>&lt;An aspiring full stack web developer/&gt;</h2>
+  <h3>Welcome to my blog!</h3>
   </div>
 
   <div id="header-image">
@@ -53,33 +54,39 @@
     <p>
       Next the relative property value, which can be a bit tricky. At least for me it was. Essentially, when you relatively position an element, you can manipulate it's location on the page - without actually changing the flow of that page. In other words, you can move the element, but the spot from which it originated, will still be there. The elements around this relatively positioned element act like it's still in it's normal spot. With this value, you can use properties like, top, right, bottom and left to determine the exact place on the page you want to stick your element.
       <blockquote>
-          main {
-          position: relative;
-          top: 120px;
-          left: 300px;
+        <code>
+          main {<br>
+          position: relative;<br>
+          top: 120px;<br>
+          left: 300px;<br>
         }
-        </blockquote>
+        </code>
+      </blockquote>
     </p>
 
     <p>
       And then the plot thickens. Now we come to the absolute position. Which is similar to the relative position but different because when you absolutely position an element, it is moved from the flow of the page entirely. It's treated as if it where never even in the page all together. With this value, you can use the top, right, bottom and left properties to determine the exact location on the page, however, it's position will be relative to it's parent element. For example, if the &lt;main&gt; element is nested inside of a &lt;div&gt; element, then it will be positioned on the page according to the &lt;div&gt;'s location. In order for this to work, the parent element (or the &lt;div&gt; in our example) has to also have a position property with a value of relative, absolute or fixed (not static). Otherwise, it will position itself according to the overarching &lt;html&gt; element.
       <blockquote>
-          main {
-          position: absolute;
-          bottom: 350px;
-          z-index: -250px;
+        <code>
+          main {<br>
+          position: absolute;<br>
+          bottom: 350px;<br>
+          z-index: -250px;<br>
         }
-        </blockquote>
+        </code>
+     </blockquote>
     </p>
 
     <p>
       Last, but not least: the fixed position. Like the absolute position, the element is removed from the normal flow of the document. All the other elements around it act like it's not even there. The difference here is, the fixed value, fixes an element on the page according to the browser window. So even if the user scrolls down, the fixed element will still be there. This is good to use for social media icons, or menus that you want your user to always see.
        <blockquote>
-          main {
-          position: fixed;
-          top: 400px;
-          right: 200px;
+        <code>
+          main {<br>
+          position: fixed;<br>
+          top: 400px;<br>
+          right: 200px;<br>
         }
+         </code>
         </blockquote>
     </p>
 
