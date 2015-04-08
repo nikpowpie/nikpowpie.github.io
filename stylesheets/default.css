@@ -15,7 +15,7 @@ header {
  width: 60%;
  margin: 10px auto;
  text-align: center;
- border-bottom: 2px dotted #B20096;
+ border-bottom: 2px dotted #FF3399;
 }
 
 nav, #headline {
@@ -64,7 +64,7 @@ position: relative
 }
 
 .blog-preview {
-  border: 1px solid #B20096;
+  border: 1px solid #FF3399;
   border-radius: 7px;
   padding: 20px;
   margin-bottom: 30px;
@@ -73,7 +73,7 @@ position: relative
 
 .blog-preview h3 {
 font-weight: bolder;
-background-color: #B20096;
+background-color: #FF3399;
 color: #fff;
 padding-left: 20px;
 border-radius: 7px;
@@ -106,10 +106,10 @@ height: 70px;
 display: block;
 text-indent: -9999em;
 background: url('../imgs/social.png');
-opacity: 0.5;
+opacity: 0.3;
 }
 
-#social #tw {
+#social #tw
   background-position: 0 0;
 }
 
@@ -130,7 +130,7 @@ opacity: 0.5;
 footer {
   font-size: 75%;
   color: white;
-  background-color: #B20096;
+  background-color: #FF3399;
   height: 20px;
   positon: absolute;
   bottom: 0;
