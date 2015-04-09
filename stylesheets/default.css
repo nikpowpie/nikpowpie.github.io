@@ -46,7 +46,7 @@ img {
   height: 10em;
   width: 10em;
   border-radius: 50%;
-  border: 1px solid #00FF00;
+  border: 1.5px solid #00FF00;
 }
 
 #header-image {
@@ -65,7 +65,7 @@ position: relative
 
 .blog-preview {
   border: 1px solid #FF3399;
-  border-radius: 7px;
+  border-radius: 2px;
   padding: 20px;
   margin-bottom: 30px;
   box-shadow: 10px 10px 5px #888888;
