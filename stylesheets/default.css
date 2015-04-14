@@ -15,7 +15,11 @@ header {
  width: 60%;
  margin: 10px auto;
  text-align: center;
- border-bottom: 2px dotted #FF3399;
+ /*Some extra styling to header to accomodate the under construction wording*/
+ border: 2px solid #FF3399;
+ border-radius: 10px;
+ box-shadow: 10px 10px 5px #888888;
+
 }
 
 nav, #headline {
@@ -60,7 +64,7 @@ img {
 main {
 width: 40%;
 margin: 50px auto;
-position: relative
+position: relative;
 }
 
 .blog-preview {
