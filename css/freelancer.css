@@ -35,8 +35,9 @@ h6 {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     font-weight: 700;
 }
+/*that ridiculous star styles*/
 
-hr.star-light,
+/*hr.star-light,
 hr.star-primary {
     margin: 25px auto 30px;
     padding: 0;
@@ -74,6 +75,8 @@ hr.star-primary:after {
     color: #340059;
     background-color: #fff;
 }
+*/
+
 
 .img-centered {
     margin: 0 auto;
