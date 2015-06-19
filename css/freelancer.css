@@ -22,7 +22,7 @@ a:focus,
 a:active,
 a.active {
     outline: 0;
-    color: #18bc9c;
+    color: #B2099A;
 }
 
 h1,
@@ -63,15 +63,15 @@ hr.star-light {
 
 hr.star-light:after {
     color: #fff;
-    background-color: #18bc9c;
+    background-color: #B2099A;
 }
 
 hr.star-primary {
-    border-color: #2c3e50;
+    border-color: #340059;
 }
 
 hr.star-primary:after {
-    color: #2c3e50;
+    color: #340059;
     background-color: #fff;
 }
 
@@ -82,17 +82,22 @@ hr.star-primary:after {
 header {
     text-align: center;
     color: #fff;
-    background: #18bc9c;
+    background: #B2099A;
 }
 
 header .container {
     padding-top: 100px;
     padding-bottom: 50px;
+    height:;
 }
 
 header img {
     display: block;
     margin: 0 auto 20px;
+    height: 15em;
+    width: 15em;
+    border-radius: 50%;
+    border: 15px solid #fff;
 }
 
 header .intro-text .name {
@@ -181,7 +186,7 @@ section h2 {
 
 section.success {
     color: #fff;
-    background: #18bc9c;
+    background: #B2099A;
 }
 
 section.success a,
@@ -190,7 +195,7 @@ section.success a:focus,
 section.success a:active,
 section.success a.active {
     outline: 0;
-    color: #2c3e50;
+    color: #340059;
 }
 
 @media(max-width:767px) {
@@ -274,7 +279,7 @@ section.success a.active {
 .btn-outline:active,
 .btn-outline.active {
     border: solid 2px #fff;
-    color: #18bc9c;
+    color: #B2099A;
     background: #fff;
 }
 
@@ -327,7 +332,7 @@ section.success a.active {
 }
 
 .floating-label-form-group-with-focus label {
-    color: #18bc9c;
+    color: #B2099A;
 }
 
 form .row:first-child .floating-label-form-group {
@@ -344,7 +349,7 @@ footer h3 {
 
 footer .footer-above {
     padding-top: 50px;
-    background-color: #2c3e50;
+    background-color: #340059;
 }
 
 footer .footer-col {
@@ -437,7 +442,7 @@ footer .footer-below {
     width: 1px;
     height: 75px;
     margin-left: 35px;
-    background-color: #2c3e50;
+    background-color: #340059;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
     transform: rotate(45deg);
@@ -447,7 +452,7 @@ footer .footer-below {
     z-index: 1052;
     width: 1px;
     height: 75px;
-    background-color: #2c3e50;
+    background-color: #340059;
     -webkit-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     transform: rotate(90deg);
