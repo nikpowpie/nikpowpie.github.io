@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Nikki's Blog: Arrays &amp; Hashes</title>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/default.css">
+  <link rel="stylesheet" type="text/css" href="../stylesheets/blog-stylesheet.css">
+  <link href='http://fonts.googleapis.com/css?family=Lato|Arvo' rel='stylesheet' type='text/css'>
+</head>
+<body>
+
+    <header>
+  <div id="header-box">
+  <div id="headline">
+  <h1>Hi, I'm Nikki.</h1>
+  <h2>&lt;An aspiring front-end web developer &amp; designer/&gt;</h2>
+  <h3>Welcome to my blog!</h3>
+  </div>
+
+  <div id="header-image">
+    <a href="https://npowerpierre.github.com">
+    <img src="../imgs/Nikki-compressed.jpg" alt="Me!" />
+    </a>
+  </div>
+
+  <!--<nav>
+    <ul>
+      <li><a href="#">About Me</a></li>
+      <li><a href="#">My Work</a></li>
+      <li><a href="#">Connect</a></li>
+    </ul>
+  </nav>-->
+</div>
+</header>
+
+<main>
+  <h1>Hashes vs. Arrays</h1>
+  <h2>the ultimate Ruby object-holding showdown</h2>
+  <h4>April 05, 2015</h4>
+
+  <section>
+    <p>
+      This week was all Ruby everything. Meaning, I got my first dose of the magical programming language. I learned two efficient ways to hold collections of information in Ruby. Arrays and Hashes. Today's conversation is all about that. We'll discuss the differences between each, and talk a little bit about when each should be used..
+    </p>
+     <p>
+      Arrays and Hashes are just ways to organize information in your programs. Each piece of information in array or hash has a key and a value. You can access that piece of information in your array or hash by it's key. Herein lies one of the fundamental differences of hashes and arrays. Let's jump right in:
+    </p>
+    <p><strong>Arrays</strong></p>
+    <p>
+      Arrays are ordered lists of information surrounded by square brackets. They can hold any type of data - strings, numbers or even booleans. You can even put an array IN an array.  They are ordered because they indexed by their place in the list. Therefore, their key, or how you access that bit of information, can be 0, 1, 2, 3 etc. For example, index of the letter 'a' in the example below is 0, and 'b' is 1, 'c' is 2 and so on.
+      <blockquote>
+        <code>
+          alphabet = [ 'a', 'b', 'c', 'd', 'e', 'f', 'g']<BR>
+          puts alphabet[0]<BR>
+          output-> a
+        </code>
+      </blockquote>
+    </p>
+    <p><strong>Hashes</strong></p>
+    <p>
+      Hashes are the more complicated of the two. Hashes store bits of information organized how you want. Instead of index integers as keys, you can create your own  using strings or numbers and assign them a value using this fancy symbol <code>=></code> (just an equals sign and a greater than symbol mushed together). There are multiple ways to create Hashes, here are a couple:
+    </p>
+    <p>Literal Hash - good for values you probably won't change</p>
+    <blockquote>
+      <code>
+        my_info = {<BR>
+        "name" => "Nikki",<BR>
+        "age" => 28,<BR>
+        "city" => "Richmond",<BR>
+        "state" => "California"<BR>
+      }
+      </code>
+    </blockquote>
+
+    <p>Hash.new (applying the new method creates a new and empty Hash.)</p>
+    <p>Once created you can stick stuff by assigning the key/value pair as shown below</p>
+    <blockquote>
+      <code>
+        my_info = Hash.new<BR>
+        my_info["age"] = 28
+      </code>
+    </blockquote>
+    <p>These are just two ways to create Hashes, there are a couple more, but today we'll just address the basics. In this the example above, the keys are name, age, city, and state. They can be used to figure out the values in they represent. If you try to access a key that has no value, you will get <code>nil</code> value, in other words nothing. Check out the example below:
+      <blockquote>
+        <code>
+          puts my_info["name"]<BR>
+          output -> Nikki
+        </code>
+      </blockquote>
+
+   <p><strong>When to use what?</strong></p>
+   <p>
+   Now that we've went over the logistics of each, let's talk about when to use what. There are some obvious reasons you would use hashes over arrays, one being, the customizable key values for storing information, not in any particular order. On the other hand, if you want to make a list that needs to be ordered by order, well then, you'd use arrays.
+   </p>
+   <p>
+   The key here is knowing the number of elements. If you know the number of elements you're going to add to your list in advance, then you should use arrays. Arrays use up alot of memory, so you want to use them sparingly especially if you are creating a app intended for a mobile device. If you don't know, then you should use the Hashes, because of their flexibility.
+   </p>
+
+   <p>THIS concludes today's blog post. To send me some feedback tweet me! @nikkip_squared!</p>
+  </section>
+
+ <section>
+  <h3>Resources</h3>
+   <ul>
+   <li><a href="http://www.sitepoint.com/guide-ruby-collections-part-arrays/" target="_blank">http://www.sitepoint.com/guide-ruby-collections-part-arrays/</a></li>
+   <li><a href="http://www.sitepoint.com/guide-ruby-collections-ii-hashes-sets-ranges/" target="_blank">http://www.sitepoint.com/guide-ruby-collections-ii-hashes-sets-ranges/</a></li>
+   </ul>
+  </section>
+</main>
+
+<aside>
+<!--Social Media Icons-->
+  <ul id="social">
+    <li><a href="https://twitter.com/nikkip_squared" id="tw" target="_blank">twitter</a></li>
+    <li><a href="https://github.com/npowerpierre" id="gh" target="_blank">github</a></li>
+    <li><a href="www.linkedin.com/in/snpierre/en" id="ldin" target="_blank">linkedin</a></li>
+    <li><a href="https://plus.google.com/111503533536791947529/posts" id="gp" target="_blank">google plus</a></li>
+  </ul>
+</aside>
+
+<footer>
+  &copy; Nikki Pierre 2015
+</footer>
+
+</body>
+</html>

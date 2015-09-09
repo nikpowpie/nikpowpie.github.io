@@ -1,0 +1,150 @@
+/* for everything */
+
+html {
+ font-family: 'Lato', sans-serif;
+ height: 100%;
+
+}
+
+a:hover {
+ color: #00FF00;
+ font-weight: bolder;
+}
+
+/* header styles */
+
+header {
+ width: 100%;
+ height: 30%;
+ margin: auto;
+ text-align: center;
+ /*Some extra styling to header to accomodate the under construction wording*/
+ /*border: 2px solid #FF3399;
+ border-radius: 10px;
+ box-shadow: 10px 10px 5px #888888;*/
+ background-color: #0D7BB2;
+}
+
+nav, #headline {
+  width: 100%;
+  font-weight: bolder;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Arvo', serif;
+}
+
+#headline {
+  line-height: 1.5em;
+}
+
+nav, li, a {
+  font-size: 110%;
+  list-style-type: none;
+  text-decoration: none;
+  text-align: center;
+  display: inline;
+}
+
+nav a {
+  margin-right: 10%;
+}
+
+img {
+  height: 10em;
+  width: 10em;
+  border-radius: 50%;
+  border: 15px solid #fff;
+}
+
+#header-image {
+  text-align: center;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 20px;
+}
+
+/* main styles */
+
+main {
+width: 40%;
+margin: 50px auto;
+position: relative;
+}
+
+.blog-preview {
+  /*border: 1px solid #FF3399;
+  border-radius: 2px;*/
+  box-shadow: 10px 10px 5px #888888;
+  padding: 20px;
+  margin-bottom: 30px;
+
+}
+
+.blog-preview h3 {
+font-family: 'Arvo', serif;
+font-weight: bolder;
+background-color: #FF9E24;
+color: #fff;
+padding-left: 20px;
+border-radius: 7px;
+}
+
+.blog-preview h4 {
+  font-weight: bolder;
+}
+
+.blog-preview p {
+  color: #424342;
+}
+
+block-quote {
+ font-family: 'Arvo', serif;
+}
+
+/* social media aside styles */
+
+aside {
+  position: fixed;
+  bottom: 15%;
+  left: 5%;
+  height: 40%;
+}
+
+ul#social li a {
+width: 70px;
+height: 70px;
+display: block;
+text-indent: -9999em;
+background: url('../imgs/social.png');
+opacity: 0.3;
+}
+
+#social #tw
+  background-position: 0 0;
+}
+
+#social #gh {
+  background-position: -237px 0;
+}
+
+#social #ldin {
+ background-position: -316px -79px;
+}
+
+#social #gp {
+  background-position: -157px -79px;
+}
+
+/* footer styles */
+
+footer {
+  font-size: 75%;
+  color: white;
+  background-color: #B26300;
+  height: 20px;
+  positon: absolute;
+  bottom: 0;
+  font-weight: bolder;
+}
